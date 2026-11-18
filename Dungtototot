@@ -1,0 +1,50 @@
+{
+    "metadata": {
+        "name": "Dịch Tiếng Hoa",
+        "author": "Klein",
+        "version": 19,
+        "source": "https://dichtienghoa.app",
+        "regexp": "dichtienghoa\\.(net|com)/truyen/\\d+",
+        "description": "Đọc truyện tại Dịch Tiếng Hoa (dichtienghoa.net) — nội dung tiếng Trung gốc",
+        "icon": "icon.png",
+        "locale": "zh_CN",
+        "language": "javascript",
+        "type": "chinese_novel"
+    },
+    "script": {
+        "home": "home.js",
+        "genre": "genre.js",
+        "gen": "gen.js",
+        "search": "search.js",
+        "detail": "detail.js",
+        "toc": "toc.js",
+        "chap": "chap.js"
+    },
+    "config": {
+        "username": {
+            "title": "Tài khoản (Tùy chọn nếu đã đăng nhập trên web)",
+            "subtitle": "Có thể để trống nếu đã đăng nhập trực tiếp qua trình duyệt web",
+            "mode": "input",
+            "format": "text",
+            "default": ""
+        },
+        "password": {
+            "title": "Mật khẩu (Tùy chọn nếu đã đăng nhập trên web)",
+            "mode": "input",
+            "format": "text",
+            "default": ""
+        },
+        "auto_buy": {
+            "title": "Chế độ mua chương VIP",
+            "subtitle": "Chế độ 'Hỏi trước khi mua' giúp tránh bị trừ coin ngoài ý muốn",
+            "mode": "select",
+            "values": [
+                "confirm=Hỏi trước khi mua (Bấm Thử lại để mua)",
+                "on=Tự động mua ngay (Không hỏi)",
+                "off=Tắt (Không tự mua)"
+            ],
+            "default": "confirm",
+            "format": "single"
+        }
+    }
+}
